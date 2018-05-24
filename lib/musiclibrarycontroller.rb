@@ -87,9 +87,6 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     user_input = gets.to_i
-    list = list_songs.all.each do |song|
-      check = song.index
-    end
   end
 
 end
