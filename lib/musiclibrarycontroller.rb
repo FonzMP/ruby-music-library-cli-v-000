@@ -88,7 +88,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     list = list_songs
     user_input = gets.to_i
-    if user_input == 0
+    if user_input == 0 || user_input == nil
       puts "Please try again"
       user_input = gets.to_i
     end
