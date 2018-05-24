@@ -91,6 +91,8 @@ class MusicLibraryController
     user_index = user_input - 1
     if user_input != 0
       puts "Playing #{list[user_index].name} by #{list[user_index].artist.name}."
+    else
+      play_song
     end
   end
 
