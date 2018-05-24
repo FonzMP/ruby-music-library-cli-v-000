@@ -89,8 +89,7 @@ class MusicLibraryController
     list = list_songs
     user_input = gets.to_i
     if user_input == 0 || user_input == nil
-      puts "Please try again"
-      user_input = gets.to_i
+      play_song
     end
     binding.pry
     user_index = user_input - 1
