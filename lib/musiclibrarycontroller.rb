@@ -89,9 +89,7 @@ class MusicLibraryController
     user_input = gets.strip
     user_index = user_input.to_i - 1
     # binding.pry
-    if user_input != 0
-      puts "Playing #{list[user_index].name} by #{list[user_index].artist.name}."
-    end
+    puts "Playing #{list[user_index].name} by #{list[user_index].artist.name}."
   end
 
 end
