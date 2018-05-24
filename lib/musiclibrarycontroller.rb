@@ -89,6 +89,7 @@ class MusicLibraryController
     list = list_songs
     user_input = gets.to_i
     user_index = user_input - 1
+    binding.pry
     if user_input != 0
       puts "Playing #{list[user_index].name} by #{list[user_index].artist.name}."
     # else
