@@ -87,7 +87,7 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     user_input = gets.strip
-    user_index = user_input.to_i - 1
+    user_index = user_input.to_i
     total_length = Song.all.length
     # binding.pry
     if user_input.between?(1, total_length)
