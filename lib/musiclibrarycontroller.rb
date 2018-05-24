@@ -86,7 +86,7 @@ class MusicLibraryController
 
   def play_song
     puts "Which song number would you like to play?"
-    user_input = gets.to.i
+    user_input = gets.to_i
   end
 
 end
