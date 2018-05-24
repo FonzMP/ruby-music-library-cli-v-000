@@ -88,8 +88,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     list = list_songs
     user_input = gets.to_i
-    if user_input != 0
-      binding.pry
+    if user_input == 0
       user_index = user_input - 1
     end
     puts "Playing #{list[user_index].name} by #{list[user_index].artist.name}."
