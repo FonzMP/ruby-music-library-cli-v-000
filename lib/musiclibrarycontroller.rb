@@ -92,7 +92,7 @@ class MusicLibraryController
     # binding.pry
     if user_index.between?(1, total_length)
       binding.pry
-      song_list = Song.all.sort {|song| song.name}[user_index - 1]
+      song_list = Song.all.sort {|a,b| song.name}[user_index - 1]
 
     end
   end
