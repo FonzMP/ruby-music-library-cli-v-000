@@ -57,7 +57,7 @@ class MusicLibraryController
   end
 
   def list_songs_by_artist
-    puts "Please enter the name of an artist:"
+    # puts "Please enter the name of an artist:"
     user_input = gets.to_s
     counter = 1
     sorted_songs = Song.all.sort_by {|song| song.name}
