@@ -94,7 +94,6 @@ class MusicLibraryController
       # binding.pry
       song_list = Song.all.sort {|a,b| a.name <=> b.name}[user_index - 1]
       puts "Playing #{song_list.name} by #{song_list.artist.name}"
-
     end
   end
 
