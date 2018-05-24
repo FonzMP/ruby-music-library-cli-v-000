@@ -91,7 +91,8 @@ class MusicLibraryController
     total_length = Song.all.length
     # binding.pry
     if user_input >= 1 || user_input < total_length
-    puts "Playing #{list[user_index].name} by #{list[user_index].artist.name}."
+      puts "Playing #{list[user_index].name} by #{list[user_index].artist.name}."
+    end
   end
 
 end
