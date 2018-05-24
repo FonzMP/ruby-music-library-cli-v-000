@@ -89,7 +89,7 @@ class MusicLibraryController
     list = list_songs
     user_input = gets.strip
     user_index = user_input.to_i - 1
-    binding.pry
+    # binding.pry
     # puts "Playing #{list[user_index].name} by #{list[user_index].artist.name}."
   end
 
