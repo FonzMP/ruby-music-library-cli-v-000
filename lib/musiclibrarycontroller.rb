@@ -89,9 +89,7 @@ class MusicLibraryController
     user_input = gets.strip
     user_index = user_input.to_i
     total_length = Song.all.length
-    # binding.pry
     if user_index.between?(1, total_length)
-      # binding.pry
       song_list = Song.all.sort {|a,b| a.name <=> b.name}[user_index - 1]
       puts "Playing #{song_list.name} by #{song_list.artist.name}"
     end
