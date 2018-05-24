@@ -92,6 +92,7 @@ class MusicLibraryController
       puts "Please try again"
       user_input = gets.to_i
     end
+    user_index = user_input - 1
     puts "Playing #{list[user_index].name} by #{list[user_index].artist.name}."
   end
 
