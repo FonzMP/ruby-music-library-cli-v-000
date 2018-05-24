@@ -93,7 +93,6 @@ class MusicLibraryController
     if user_index.between?(1, total_length)
       binding.pry
       song_list = Song.all.sort {|a,b| a.name <=> b.name}[user_index - 1]
-
     end
   end
 
