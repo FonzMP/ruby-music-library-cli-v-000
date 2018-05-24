@@ -89,7 +89,7 @@ class MusicLibraryController
     list = list_songs
     user_input = gets.to_i
     if user_input == 0
-      user_index = user_input - 1
+      puts "Please try again"
     end
     puts "Playing #{list[user_index].name} by #{list[user_index].artist.name}."
   end
